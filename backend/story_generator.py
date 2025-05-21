@@ -11,12 +11,12 @@ import os
 # The region can be specified explicitly or taken from AWS_DEFAULT_REGION
 bedrock_runtime = boto3.client(service_name="bedrock-runtime")
 
-STORY_GENRES = ["bedtime", "horror", "fantasy", "comedy"]
+STORY_GENRES = ["bedtime story", "horror", "fantasy", "comedy"]
 
 # You might want to adjust this based on availability in your region
 # and desired capabilities. For example, Claude 3 Sonnet:
 CLAUDE_MODEL_ID = os.environ.get(
-    "CLAUDE_MODEL_ID", "anthropic.claude-3-sonnet-20240229-v1:0"
+    "CLAUDE_MODEL_ID", "us.anthropic.claude-3-7-sonnet-20250219-v1:0"
 )
 # Or for older models like Claude 2.1:
 # CLAUDE_MODEL_ID = "anthropic.claude-v2:1"
