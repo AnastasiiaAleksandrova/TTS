@@ -38,7 +38,7 @@ def generate_story_from_bedrock(genre):
         str: The generated story as an SSML string, or None if an error occurs.
     """
     prompt_instructions = (
-        "You are a creative storyteller. Write a short, engaging story "
+        "You are a creative storyteller. Write a short, engaging story use role playing to make it more engaging "
         "for the given genre. The story should be suitable for text-to-speech "
         "synthesis using Amazon Polly. Format the entire story as a valid "
         "SSML document. The root element must be <speak>. Use <p> tags for "
